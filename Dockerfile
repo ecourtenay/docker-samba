@@ -1,9 +1,9 @@
 FROM alpine:latest
 MAINTAINER Peter Boyd
 
-LABEL Description="Simple and lightweight Samba docker container, based on Alpine Linux." Version="0.01"
+LABEL Description="Simple and lightweight Samba docker container, based on Alpine Linux." Version="0.02"
 
-ENV SERVERNAME rancher-samba
+ENV SERVERNAME docker-samba
 ENV USERNAME samba
 ENV GROUP samba
 ENV PASSWORD password
