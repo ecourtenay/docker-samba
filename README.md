@@ -15,7 +15,7 @@ docker run -t -d --rm \
   -p "445:445" \
   -v <path/to/config>:/config \
   -v </path/to/share>:/shares \
-  flibble/samba
+  edcourtenay/docker-samba:main
 ```
 This will run a simple Samba server storing the generated smb.conf file at the given _config_ directory and sharing the single _share_ path.
 
