@@ -1,7 +1,9 @@
 FROM alpine:latest
-MAINTAINER Ed Courtenay
 
-LABEL Description="Simple and lightweight Samba docker container, based on Alpine Linux." Version="0.02"
+LABEL org.opencontainers.image.description="Simple and lightweight Samba docker container, based on Alpine Linux."
+LABEL org.opencontainers.image.authors="ed@edcourtenay.co.uk"
+LABEL org.opencontainers.image.source="https://github.com/ecourtenay/docker-samba"
+LABEL org.opencontainers.image.documentation="https://github.com/ecourtenay/docker-samba/blob/main/README.md"
 
 ENV SERVERNAME docker-samba
 ENV WORKGROUP WORKGROUP
