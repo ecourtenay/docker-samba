@@ -52,7 +52,8 @@ EOL
 fi
 
 # Start the SMB services
-smbd -F -S -s /config/smb.conf &
-nmbd -F -S -s /config/smb.conf
+smbd -F --configfile=/config/smb.conf &
+nmbd -F --configfile=/config/smb.conf &
+wsdd --hostname $SERVERNAME --workgroup $WORKGROUP
 
 
