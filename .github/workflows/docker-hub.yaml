@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: edcourtenay/${{ github.repository }}
+  IMAGE_NAME: ${{ vars.DOCKER_ACCOUNT }}/docker-samba
 
 jobs:
   build-and-push-image:
