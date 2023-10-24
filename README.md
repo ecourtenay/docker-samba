@@ -1,5 +1,5 @@
 # docker-samba
-Docker container to run a Samba server
+Docker container to run a Samba server - based on [original image from Peter Boyd](https://gitlab.com/MrFlibble/docker-samba)
 
 ## Usage
 
