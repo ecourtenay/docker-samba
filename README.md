@@ -1,5 +1,8 @@
 # docker-samba
-Docker container to run a Samba server - based on [original image from Peter Boyd](https://gitlab.com/MrFlibble/docker-samba)
+Docker container to run a Samba server - based on [original image from Peter Boyd][forked-from]
+
+Image includes [wsdd][wsdd] which enables the Samba server to be found by Web Service Discovery Clients like Windows.
+
 
 ## Usage
 
@@ -29,3 +32,6 @@ This will run a simple Samba server storing the generated smb.conf file at the g
  * example: ```-e SHARES "/shares/documents /shares/photos"``` would create two shares, sharing the contents of the specified paths. If /shares is a mounted volume then these paths would be shared from the host not the docker container.
 * ```-e PUID``` set the user id to use for the samba user (default = 1100). This is used to help with file permissions.
 * ```-e PGID``` set the group id to use for the samba user (default = 1100). This is used to help with file permissions.
+
+[forked-from]: https://gitlab.com/MrFlibble/docker-samba
+[wsdd]: https://github.com/christgau/wsdd
