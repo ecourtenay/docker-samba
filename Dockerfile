@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Peter Boyd
+MAINTAINER Ed Courtenay
 
 LABEL Description="Simple and lightweight Samba docker container, based on Alpine Linux." Version="0.02"
 
