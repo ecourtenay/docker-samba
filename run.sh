@@ -10,7 +10,7 @@ if [ ! -e /config/smb.conf ]; then
   cat > /config/smb.conf <<EOL
 [global]
     netbios name = $SERVERNAME
-    workgroup = WORKGROUP
+    workgroup = $WORKGROUP
     server string = Samba %v in an Alpine Linux Docker container
     security = user
     guest ok = yes
