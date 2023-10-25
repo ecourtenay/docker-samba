@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.17
 
 LABEL org.opencontainers.image.description="Simple and lightweight Samba docker container, based on Alpine Linux."
 LABEL org.opencontainers.image.authors="ed@edcourtenay.co.uk"
