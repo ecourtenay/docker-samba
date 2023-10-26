@@ -17,7 +17,7 @@ ENV PGID 1100
 # install samba and supervisord
 # create a dir for the config and the share
 RUN apk --no-cache add samba samba-common-tools bash wsdd \
-  && mkdir /init-config /config /shares
+  && mkdir /config /shares
 
 # copy config files from project folder to get a default config going for samba and supervisord
 COPY run.sh /
