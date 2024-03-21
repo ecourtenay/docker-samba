@@ -28,4 +28,7 @@ VOLUME /config
 # exposes samba's default ports (137, 138 for nmbd and 139, 445 for smbd)
 EXPOSE 137/udp 138/udp 139 445
 
+HEALTHCHECK --interval=60s --timeout=15s \
+            CMD smbclient -L '\\localhost' -U '%' -m SMB3
+
 CMD ["/run.sh"]
